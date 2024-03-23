@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheCodes Weekly</title>
+  <style>
+    .weather-container {
+      text-align: center;
+    }
+    .country h1 {
+      color: #1a64d6;
+      font-size: 36px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .degree h2 {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight: lighter;
+    }
+    .weather-container strong {
+      color: black;
+    }
+    .forecast {
+      padding: 0;
+      margin-top: 30px;
+    }
+    ul {
+      padding-inline-start: 0.5px;
+      list-style-type: none;
+      margin: 22px auto;
+      border: 1px rgb(241, 226, 231);
+      background-color: transparent;
+      color: black;
+      width: 30em;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 27px 26px;
+      border-radius: 27px;
+      line-height: 25px;
+      transition: all 200ms ease-in-out;
+    }
+    .forecast li {
+      padding: 30px 26px;
+      border-radius: 35px;
+      text-align: center;
+      line-height: 25px;
+      padding: 20px 0;
+      border-radius: 30px;
+      margin: 20 auto;
+      transition: all 200ms ease-in-out;
+      width: 30em;
+    }
+    li:hover {
+      background-color: rgb(250, 233, 239);
+      display: block;
+      opacity: 1;
+    }
+    .forecast h3 {
+      font-size: 18px;
+    }
+    .forecast p {
+      font-size: 14px;
+      color: black;
+      text-align: center;
+      font-family: monospace;
+      padding-inline-start: 0.5px;
+      opacity: 0.8;
+    }
+    .btn {
+      display: block;
+      margin: 21px auto;
+      border: 1px solid #1a64d6;
+      background-color: #1a64d6;
+      color: #fff;
+      width: 10em;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 18px 26px;
+      border-radius: 30px;
+      box-shadow: rgba(43, 45, 105, 0.08) 0px 8px 8px 0;
+      line-height: 20px;
+      border-width: 0.5px auto;
+      transition: all 200ms ease-in-out;
+      opacity: 1;
+    }
+    .btn:hover {
+      background-color: #fff;
+      color: #1a64d6;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-container">
+    <div class="country">
+      <h1>
+        <br>
+        Currently 21° in Tokyo
+      </h1>
+        
+    </div>
+    <div class="degree">
+      <h2>13° /
+        <strong>23°</strong>
+      </h2>
+    </div>
+    <div class="weather-forecast">
+      <ul>
+        <li>
+          <h3>🌧 Tomorrow
+          </h3>
+          <p>
+            10° /
+            <strong>22°</strong>
+          </p>
+        </li>
+        <br />
+        <br />
+        <li>
+          <h3>🌥 Saturday</h3>
+          <p>15° /
+            <strong>17°</strong>
+          </p>
+        </li>
+        <br />
+        <br />
+        <li>
+          <h3>☀️ Sunday
+          </h3>
+          <p>
+            25° /
+            <strong>28°</strong>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <button class="btn">Change City
+    </button>
+
+    <p>
+      Coded by Agwuncha Chioma Jane
+    </p>
+
+
+  </div>
+<a href="#Donate">Donate Now</a>
+<script>
+
+  function changeCity() {
+    let city = prompt("Which city do you live in?");
+    let temperature = prompt("What temperature is it?");
+    let heading = document.querySelector("h1");
+    if (temperature < 0) {
+      heading.innerHTML =
+        "😥😌<br />Currently " + temperature + "°C in " + city;
+    } else {
+      heading.innerHTML =
+        "🙂😊<br />Currently " + temperature + "°C in " + city;
+    }
+  }
+  let changeButton = document.querySelector("button");
+  changeButton.addEventListener("click", changeCity);
+</script>
+
+
+  </div>
+</body>
+
+</html>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
